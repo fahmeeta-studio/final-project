@@ -1,0 +1,129 @@
+
+@font-face { font-family: Opensans; src: url('OpenSans-Regular.ttf'); } 
+      body {
+         font-family: Opensans;
+      }
+
+.h1 {
+  color: #003262;
+  font-weight: 900;
+  font-size:2vw;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.p1 {
+  font-size:1vw;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FDB515;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #003262;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.openbtn {
+  font-size: 50px;
+  cursor: fixed;
+  color: 003262;
+  background-color: transparent;
+  padding: 10px 15px;
+  top: 25px;
+  border: none;
+  position: fixed;
+  right: 10px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.grid-container-header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item-header {
+  padding: 10px;
+  max-height:100%
+  width:100%
+}
+.grid-container-timeline {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+}
+.grid-item-timeline {
+  padding: 50px;
+  max-height:100%
+  width:100%
+}
+.grid-2021item-header {
+  grid-column: 1/3;
+}

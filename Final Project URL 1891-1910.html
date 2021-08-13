@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Final Project URL.css">
+<title>UC Berkeley Extension Celebrates 130 Years - 1891-1910</title>
+</head>
+<body>
+
+<div class="grid-container-header">
+  <div class="grid-item-header">
+    <a href="Final Project URL Homepage.html"><img src="primarylogo.png" alt="Berkeley Logo" width="400" style="float:left" /></a>
+  </div>
+  <div class="grid-item-header">
+  </div>
+  <div class="grid-item-header">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button> 
+    </div>
+  </div>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Final Project URL Homepage.html">Home</a>
+  <a href="Final Project URL 1891-1910.html">1891-1910</a>
+  <a href="Final Project URL 1911-1930.html">1911-1930</a>
+  <a href="Final Project URL 1931-1950.html">1931-1950</a>
+  <a href="Final Project URL 1951-1970.html">1951-1970</a>
+  <a href="Final Project URL 1971-1990.html">1971-1990</a>
+  <a href="Final Project URL 1991-2010.html">1991-2010</a>
+  <a href="Final Project URL 2011-2020.html">2011-2020</a>
+  <a href="Final Project URL 2021.html">2021</a>
+</div>
+
+
+<div class="grid-container-timeline">
+<div class="grid-item-timeline">
+<h3 class="h1">1891-1900</h3>
+
+<p class="p1">
+Following years of calls from the public to open access to Berkeley’s excellent courses and programs,
+University Extension came to life in 1891 when three professors crossed the Bay by ferry to offer
+courses in San Francisco in history (Prof. Bacon), mathematics (Prof. Stringham) and English
+literature (Prof. Gayley). These long awaited education opportunities were met with much
+enthusiasm by the people of San Francisco, more than 800 people attended the first classes.
+However, following the official approval of Extension by the Academic Senate in 1892, a financial
+crisis hit the university and in 1893 the faculty was no longer able to provide courses to the public
+without being offered any compensation.
+</p>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="Women Traveler.png" alt="Woman traveling" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Gayley Portrait.png" alt="Portrait of Charles Mills Gayley" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Crowd standing in field.png" alt="Crowd in field" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<img src="Women Standing in Court.png" alt="Women Standing in Court" style="width:100%">
+</div>
+
+<div class="grid-item-timeline">
+<h3 class="h1">1901-1910</h3>
+
+<p class="p1">
+In 1902, the Board of Regents made University Extension an autonomous department under the
+leadership of the former Cornell history professor Henry Morse Stephens. Stephens was a fervent
+supporter of the original ideology of university extension’s: “I am longing to try my hand on a great
+Extension scheme on the Oxford line - I know I can do it and make a success of it.” In contrast to the
+initial ‘free lectures’ model of Gayley and his colleagues, Stephens designed and organized lectures
+to meet the needs and interests of adult professionals across the state. This model was operating
+largely independently of the Academic Senate, used mainly non-faculty lecturers offering non-credit
+courses, and was self-funded through a subscription model. With this extremely agile and
+student-centric model, he created the fundamental concept of Continuing Education as we know it
+today. The success of this model and his own energy, engagement and popularity, allowed
+corres Extension to grow exponentially, reaching its peak of 15 centers around the state of California
+in 1905. However, when Stephens continued his career with other university appointments after
+1905, Extension activities declined until they ultimately ceased in 1910.
+</p>
+</div>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>

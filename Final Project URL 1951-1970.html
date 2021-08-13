@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Final Project URL.css">
+<title>UC Berkeley Extension Celebrates 130 Years - 1951-1970</title>
+</head>
+<body>
+
+<div class="grid-container-header">
+  <div class="grid-item-header">
+    <a href="Final Project URL Homepage.html"><img src="primarylogo.png" alt="Berkeley Logo" width="400" style="float:left" /></a>
+  </div>
+  <div class="grid-item-header">
+  </div>
+  <div class="grid-item-header">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button> 
+    </div>
+  </div>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Final Project URL Homepage.html">Home</a>
+  <a href="Final Project URL 1891-1910.html">1891-1910</a>
+  <a href="Final Project URL 1911-1930.html">1911-1930</a>
+  <a href="Final Project URL 1931-1950.html">1931-1950</a>
+  <a href="Final Project URL 1951-1970.html">1951-1970</a>
+  <a href="Final Project URL 1971-1990.html">1971-1990</a>
+  <a href="Final Project URL 1991-2010.html">1991-2010</a>
+  <a href="Final Project URL 2011-2020.html">2011-2020</a>
+  <a href="Final Project URL 2021.html">2021</a>
+</div>
+
+
+<div class="grid-container-timeline">
+<div class="grid-item-timeline">
+<h3 class="h1">1951-1960</h3>
+
+<p class="p1">
+By the early 1950s, the model of a typical extension student was someone who already at least had some higher education. About 80% had college experience, 40% had earned a bachelor's degree; and 67% were employed professional, semi professional or managerial occupations. Under the direction of Professor Woods, UC Extension moved successfully in two directions at once: First, it began offering "useful training" unrelated to traditional degree course offerings, and second, it shifted the emphasis of the class program from lower-division to upper-division and graduate work. With appropriate involvement of the faculty, Extension began offering a graduate degree in education in San Diego, and masters' degrees in engineering first at five centers in the south and later in northern California as well. Propelled by the successful collaboration between Extension and the university’s faculty, the number of Extension units grew rapidly: Riverside in 1954; San Diego in 1959; Davis in 1960.
+</p>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="1964 Mario Savio speaking from roof of car.png" alt="Mario Savio speaking from roof of car" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Free Speech Movement.png" alt="Free Speech Movement Protest" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="1950 Lifelong learning catalog.png" alt="1950 Lifelong learning catalog" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="1961 Corresponded Courses Cover.png" alt="1961 Correspondence Courses Cover" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="1960 Correspondence Courses.png" alt="1960 Correspondence Courses Cover" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="16.png" alt="Berkeley Commemorative Coin" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<h3 class="h1">1961-1970</h3>
+
+<p class="p1">
+The 1960s saw a trend toward decentralization. The UC campuses, and, along with them, the Extension units, were given more autonomy, making it possible to re​spond more quickly and effectively to local needs. By dividing the state into eight regions, one assigned to each Extension unit, all Californians were considered, even if there wasn't a campus nearby. In 1965, the Extension network grew by two new units, Irvine and Santa Cruz.
+During the 1960s, Extensions on most of the campuses participated in the Great Society movement with a variety of community development experiments, like the Oakland Project, which brought government agencies and independent citizen action groups together to improve their efficiency and effectiveness. In 1965, the Western Center for Community Education and Development was established at UCLA Extension "to provide continuing assistance to organizations, agencies and
+groups engaged in seeking solutions to community problems.” UCLA Extension also had one of the largest Peace Corps trainings in the country.
+Given that nearly 70% of Extension students were working professionals, Governor Edmund G. Brown initiated action that eliminated Extension's small portion of state funding. By 1968, Extension was completely self-supporting and Extension established certificate programs.</p>
+
+<p class="p1">
+Given the increasing demand in the job market for specialization, those seeking employment or advancement needed an efficient way to obtain training. Extension responded by developing certificate programs-planned sequences of courses designed under the guidance of advisory committees of campus faculty and top professionals.
+</p>
+</div>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Final Project URL.css">
+<title>UC Berkeley Extension Celebrates 130 Years - 1991-2010</title>
+</head>
+<body>
+
+<div class="grid-container-header">
+  <div class="grid-item-header">
+    <a href="Final Project URL Homepage.html"><img src="primarylogo.png" alt="Berkeley Logo" width="400" style="float:left" /></a>
+  </div>
+  <div class="grid-item-header">
+  </div>
+  <div class="grid-item-header">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button> 
+    </div>
+  </div>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Final Project URL Homepage.html">Home</a>
+  <a href="Final Project URL 1891-1910.html">1891-1910</a>
+  <a href="Final Project URL 1911-1930.html">1911-1930</a>
+  <a href="Final Project URL 1931-1950.html">1931-1950</a>
+  <a href="Final Project URL 1951-1970.html">1951-1970</a>
+  <a href="Final Project URL 1971-1990.html">1971-1990</a>
+  <a href="Final Project URL 1991-2010.html">1991-2010</a>
+  <a href="Final Project URL 2011-2020.html">2011-2020</a>
+  <a href="Final Project URL 2021.html">2021</a>
+</div>
+
+
+<div class="grid-container-timeline">
+<div class="grid-item-timeline">
+<h3 class="h1">1991-2000</h3>
+
+<p class="p1">
+Following the "globalization" trend of the world’s economies and the proliferation of the internet in the 1990s, Extension pioneered online learning after receiving a Sloan grant in 1994 to build an interactive, fully online continuing education curriculum easily accessible nationwide via a commercial carrier. The early successes in providing professionals with online courses allowed the institution and its Dean Mary S. Metz to later become a key supporter of the California state initiative to create a California Virtual University in 1998.
+</p>
+
+<p class="p1">
+With the explosive growth of demand and the consequent increase in course offerings 1995, the Extension headquarter moves to its current location in the Golden Bear Building at 1995 University Ave, Berkeley. In the same year, Extension launched the ambitious ExtEN (Extension Educational Network) Project, a pilot program funded in part by a grant from Pacific Bell's California Research in Education Network to explore the use of two-way video conferencing technology, allowing instructors to lecture to learners in two locations simultaneously. In 1996, 1998 and 1999, additional education centers opened in Fremont, Redwood City and downtown San Francisco, to expand access to Extension’s programs and courses to professionals in the east of the San Francisco Bay Area and on the peninsula.
+</p>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="62.png" alt="90s Extension Ad" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="64.png" alt="90s Extension Ad" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="65.png" alt="90s Extension Ad" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="2009Catalog.jpeg" alt="2009 Course Catalog" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="2008Catalog.jpeg" alt="2008 Course Catalog" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="2002Catalog.jpeg" alt="2002 Course Catalog" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<h3 class="h1">2001-2010</h3>
+
+<p class="p1">
+Mirroring the economic downturn in the wake of the dot-com bubble that impacted in particular the technology industries of the Bay Area, Extension experienced declines in enrollments, particularly in its high technology programs. The decline became sharper with the deepening recession after Sept. 11 2001, which had a particularly adverse impact on international enrollments. Consequently, Extension underwent significant organizational restructuring in 2002 and gave up its historic Laguna Street campus in San Francisco 2004. In 2005, a new downtown campus opened in the SoMA Center, while the East Bay centers in Fremont and San Ramon are closed in 2007. In 2008, Dean Diana Wu was officially appointed, a position she holds until today. In 2009, the Richmond center was moved to Belmont, to better serve learners on the peninsula.
+</p>
+</div>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>

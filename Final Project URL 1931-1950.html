@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Final Project URL.css">
+<title>UC Berkeley Extension Celebrates 130 Years - 1931-1950</title>
+</head>
+<body>
+
+<div class="grid-container-header">
+  <div class="grid-item-header">
+    <a href="Final Project URL Homepage.html"><img src="primarylogo.png" alt="Berkeley Logo" width="400" style="float:left" /></a>
+  </div>
+  <div class="grid-item-header">
+  </div>
+  <div class="grid-item-header">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button> 
+    </div>
+  </div>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Final Project URL Homepage.html">Home</a>
+  <a href="Final Project URL 1891-1910.html">1891-1910</a>
+  <a href="Final Project URL 1911-1930.html">1911-1930</a>
+  <a href="Final Project URL 1931-1950.html">1931-1950</a>
+  <a href="Final Project URL 1951-1970.html">1951-1970</a>
+  <a href="Final Project URL 1971-1990.html">1971-1990</a>
+  <a href="Final Project URL 1991-2010.html">1991-2010</a>
+  <a href="Final Project URL 2011-2020.html">2011-2020</a>
+  <a href="Final Project URL 2021.html">2021</a>
+</div>
+
+
+<div class="grid-container-timeline">
+<div class="grid-item-timeline">
+<h3 class="h1">1931-1940</h3>
+
+<p class="p1">
+The Great Depression impacted Extension’s ability to maintain its educational offerings, nevertheless, new structural changes allowed for the creation of new resources for professional career development. While other universities across the country spun out their Extensions to become independent colleges with their own standards, faculty and programs, UC held on to its original design of an integrated Extension. As a consequence, control of the Academic Senate grew and to ensure the continuing ability to deliver university credit bearing courses, while providing professional training, Extension offerings were divided into three categories: degree credit, professional upgrading, and noncredit offerings.
+</p>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="1931 UC Berkeley Graduation.png" alt="1931 UC Berkeley Graduation" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="1934 Bread Line.png" alt="1934 Bread Line" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="1935 Students Walking through Gate.png" alt="1935 Students Walking through Gate" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="1941-1950 Physical Sciences and Engineering Library.png" alt="1941-1950 Physical Sciences and Engineering Library" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="1943 Military Students Drilling.png" alt="1943 Military Students Drilling" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="1950 Governor Earl Warren.png" alt="1950 Governor Earl Warren" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+</div>
+
+<div class="grid-item-timeline">
+<h3 class="h1">1941-1950</h3>
+
+<p class="p1">
+During World War II, Extension classes and correspondence courses became an important way for service personnel to continue their education. As part of the war effort, Extension’s Director Professor Baldwin Munger Woods took over the Engineering Science Management Defense Training (ESMDT) Program. By the end of the war, hundreds of thousands of research dollars poured into California, spawn​ing new industries and, once again, dramatically increasing the population. UCLA Extension met the critical need for retraining mandated by Southern California's burgeoning aerospace industry, while UC Berkeley Extension expanded its business and engineering courses across the state. Growth also meant an increased demand for teachers. Extension responded by developing an emergency teacher training program that enabled new teachers to satisfy the state's credential requirements.
+With the new UC Santa Barbara campus, a new Extension began offering classes in 1944. All the while, important new programs were developed and implemented. Continuing Education of the Bar (CEB), for example, was established in 1947 by the Regents of the University and the State Bar of California. Today it is one of the country's largest continuing education programs for lawyers.
+</p>
+</div>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
